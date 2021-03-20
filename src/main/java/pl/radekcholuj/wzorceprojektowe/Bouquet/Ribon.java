@@ -5,11 +5,12 @@ public class Ribon extends BouquetDecorator{
         super(flowerBouquet);
     }
 
-    public String addonsRibon() {
-        return " with ribon";
-    }
 
     public String addons() {
         return super.addons() + addonsRibon();
+    }
+
+    public String addonsRibon() {
+        return " with ribon";
     }
 }
