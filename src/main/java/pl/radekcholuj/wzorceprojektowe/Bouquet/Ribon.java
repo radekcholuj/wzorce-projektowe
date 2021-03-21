@@ -7,10 +7,12 @@ public class Ribon extends BouquetDecorator{
 
 
     public String addons() {
+
         return super.addons() + addonsRibon();
     }
 
     public String addonsRibon() {
-        return " with ribon";
+
+        return " with Ribon";
     }
 }

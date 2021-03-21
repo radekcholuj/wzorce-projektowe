@@ -6,7 +6,7 @@ import pl.radekcholuj.wzorceprojektowe.Bouquet.FlowerBouquetImpl;
 import pl.radekcholuj.wzorceprojektowe.Bouquet.Limb;
 import pl.radekcholuj.wzorceprojektowe.Bouquet.Ribon;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class FlowerBouquetTest {
@@ -29,7 +29,7 @@ public class FlowerBouquetTest {
         FlowerBouquet bouquet = new Limb(flowerBouquetImpl);
 
         //then
-        assertEquals(bouquet.addons(), "nice bouquet with limb");
+        assertEquals(bouquet.addons(), "nice bouquet with Limb");
     }
 
     @Test
@@ -41,7 +41,6 @@ public class FlowerBouquetTest {
         FlowerBouquet bouquet = new Ribon(flowerBouquetImpl);
 
         //then
-        assertEquals(bouquet.addons(),"nice bouquet with ribon");
+        assertEquals(bouquet.addons(),"nice bouquet with Ribon");
     }
-
 }
